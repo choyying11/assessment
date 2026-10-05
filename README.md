@@ -38,14 +38,5 @@ aggregate data by time periods.
 
 # Task 2:
 
-Raw CSV
-   ↓
-staging_transactions
-   ↓
-Data quality checks
-   ├── duplicate txn_id
-   ├── missing values
-   ├── invalid dates
-   └── invalid amounts
-   ↓
-Clean fact_transactions
+Raw CSV  -> staging_transactions -> data quality checks ->  Clean fact_transactions
+   
