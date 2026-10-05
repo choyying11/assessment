@@ -34,3 +34,18 @@ distribution strategy.
 Transaction and top-up facts are sorted by their respective date
 columns because analytical queries are expected to filter and
 aggregate data by time periods.
+
+
+# Task 2:
+
+Raw CSV
+   ↓
+staging_transactions
+   ↓
+Data quality checks
+   ├── duplicate txn_id
+   ├── missing values
+   ├── invalid dates
+   └── invalid amounts
+   ↓
+Clean fact_transactions
