@@ -20,6 +20,16 @@ topups.csv
 dealer_hierarchy
 - supports multi-level upline relationships
 
+
+## Distribution and Sort Key
+
+### Distribution
+
+`DISTSTYLE AUTO` is used because the assessment does not provide
+a specific cluster configuration or production query
+workload. This allows the system to determine an appropriate
+distribution strategy.
+
 ### Sort keys
 Transaction and top-up facts are sorted by their respective date
 columns because analytical queries are expected to filter and
